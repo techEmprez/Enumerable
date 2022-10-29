@@ -9,8 +9,8 @@ class MyList
     @list = list
   end
 
-# Use of .each
- def each(&block)
+  # Use of .each
+  def each(&block)
     @list.each(&block)
   end
 end
