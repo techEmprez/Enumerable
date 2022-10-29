@@ -8,3 +8,9 @@ class MyList
   def initialize(*list)
     @list = list
   end
+
+# Use of .each
+ def each(&block)
+    @list.each(&block)
+  end
+end
