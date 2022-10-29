@@ -1,3 +1,5 @@
+# Use methods for MyList
+
 require_relative Enumerable
 
 class MyList
