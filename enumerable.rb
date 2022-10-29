@@ -11,3 +11,5 @@
     each{ |item| result = true if yield item }
     result
   end
+
+# Module Enumerable of #filter? method
