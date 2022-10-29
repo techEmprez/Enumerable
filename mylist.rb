@@ -1,16 +1,23 @@
 # Use methods for MyList
 
-require_relative Enumerable
+require_relative './enumerable'
 
 class MyList
-  include Enumerable
+  include MyEnumerable
 
   def initialize(*list)
     @list = list
   end
 
-  # Use of .each
-  def each(&block)
-    @list.each(&block)
+  def each
+    i = 0
+
+    while @list[i]
+
+      yield @list[i]
+
+      i += 1
+
+    end
   end
 end
